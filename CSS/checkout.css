@@ -1,0 +1,23 @@
+footer{
+    padding:5%;
+    background-color:#542631;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer hr{
+    width:50%;
+    height:100%;
+    
+    rotate:90deg;
+}
+
+footer .foot{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#FFFFFF;
+}
