@@ -4,23 +4,80 @@
     box-sizing: border-box;
 }
 header{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    
-
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5B202C;
 }
 .menu{
-    width: fit-content;
+    gap: 3rem;
+    width: 26em;
+    justify-content: space-evenly;
+    align-items: center;
+  
 }
 
+.barra-pesquisa{
+    display: inline;
+    margin: 3rem;
+    
+}
 
 .logo{
- width: 50%;
- 
+    transform: scale(1.2);
+}
+.flex{
+    display: flex;
 }
 
-.pesquisa{
+header input[type="search"] {
+    min-width: 35em;
+    padding: 0.5rem;
+    border: 2px solid rgb(105, 105, 105);
+    border-right:none ;
+    border-radius: 20px 0px 0px 20px;
+}
+
+header input::selection[type="search"] {
+    border:none;
+}
+
+header form button{
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(105, 105, 105);
+    border-left:none ;
+    border-radius: 0px 20px 20px 0px;
+    
+}
+
+.action{
+    width: 24vw;
+    justify-content: space-evenly;
+}
+
+.action img{
+    width: 2em;
+}
+
+.action a{
+ 
+    background-color: aliceblue;
+    padding: 0.7rem;
+    border: 2px solid rgb(62, 62, 62);
+    border-radius: 20px;
+}
+
+.next-slide{
     display: flex;
-    flex-direction: row;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.next-button{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(115, 115, 115);
+    border-radius: 50%;
 }
