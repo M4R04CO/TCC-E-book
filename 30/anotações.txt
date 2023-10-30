@@ -4,5 +4,8 @@ Atividades feitas:
 Rafel e Guilherme
 Wireframe e Mockup da tela de usuário.
 
+Guilherme
+Tela e Mockpu dos favoritos.
+
 Marcos
 html e css da página inicial.
