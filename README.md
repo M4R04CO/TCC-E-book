@@ -33,10 +33,16 @@ A nossa equipe é composta de três estudates da Alexandrina Santiago Netto, ser
 Com isso em mente vamos apresentar algum beneficios que nosso projeto tem:
 
   Disponibilização uma ampla variedade de e-books, abrangendo diversos gêneros e tópicos para atrair diferentes tipos de leitores.
+  
   Fornercemos descrições detalhadas de cada e-book, incluindo sinopse, autor, ano de publicação e classificação para que os clientes possam tomar decisões informadas.
+  
   Permitimos que os clientes escolham entre diferentes formatos de e-books (PDF, ePub, MOBI) e ofereça preços competitivos.
+  
   Permitimos que os e-books comprados sejam facilmente sincronizados em dispositivos como tablets, e-readers e smartphones.
+  
   Campanhas promocionais sazonais ou descontos especiais para atrair mais compradores.
+  
   Avaliações e comentários sobre os e-books para ajudar outros compradores a escolherem seus livros.
+  
   Temos políticas claras de devolução e reembolso para garantir a satisfação do cliente.
   
