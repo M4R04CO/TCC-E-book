@@ -15,9 +15,13 @@ A nossa loja vem como uma solução para resolver o problema de acessibilidade, 
 ## Tecnologias usadas
 
   HTML usamos para fazer a estruturação e disposição dos elementos do site;
+  
   CSS usamos para fazer a estilição de cada elemento do site;
+  
   JavaScript usamos para fazer a interação do usuarios com o site;
+  
   PHP usamos para fazer uma busca de dados no Banco de Dados do site;
+  
   SQL usamos para armazenar os dados referente aos livros;
 
 ## Equipe
@@ -25,7 +29,9 @@ A nossa loja vem como uma solução para resolver o problema de acessibilidade, 
 A nossa equipe é composta de três estudates da Alexandrina Santiago Netto, serie 3° D.
 
   Rafael Fernando Couto Costa
+  
   Guilherme Santos da Silva
+  
   Marcos Antonio da Silva Matias
 
 ## Benefios
