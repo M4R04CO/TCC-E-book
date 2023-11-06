@@ -9,3 +9,15 @@ Tela e Mockpu dos favoritos.
 
 Marcos
 html e css da página inicial.
+
+
+06/11/2023
+
+Guilherme 
+Criação das pagina de checkut.
+
+Rafael
+Criação e remodelagem de paginas do figma.
+
+Marcos 
+Criação da pagina de livros.
