@@ -8,7 +8,6 @@
 
     <!-- Bootstrap CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/TCC-E-book/CSS/checkout.css">
 
@@ -33,81 +32,96 @@
    </header>
 
     <section>
-        <form>
-            <div class="DP">
-              <h2><img src="/TCC-E-book/imagens/menu.png" alt="">Dados Pessoais</h2> <hr>
-              <p>Já Possui Cadastro? <a href="">Identifique-se</a></p> 
-      
-              <hr>
+        <form class="initial">
+          <h2><img src="/TCC-E-book/imagens/menu.png" alt="">Dados Pessoais</h2> <hr>
+          <p>Já Possui Cadastro? <a href="">Identifique-se</a></p> 
+  
+          <hr>
 
-              <label for="">Nome:</label>
-              <input type="text"> 
-
-              <label for="">E-Mail:</label>
-              <input type="text"> 
-
-              <hr>
-
-              <label for="">Senha:</label>
-              <input type="password"> 
-
-              <label for="">Confirmar Senha:</label>
-              <input type="password"> 
-
-              <hr>
-
-              <label for="">CPF:</label>
-              <input type="text"> 
-
-              <label for="">R.G.:</label>
-              <input type="text"> 
-
-            </div>
-          </form>
-        <form>
-          <div class="LE">
-            <h2><img src="/TCC-E-book/icons/gps.svg" alt="">Local De Envio</h2>
-
-            <label for="">CEP:</label>
-            <input type="text"> 
-
-            <label for="">Ponto De Referência:</label>
-            <input type="text"> 
-
-            <label for="">Nº Da Casa:</label>
-            <input type="text"> 
-          </div>
-        </form>
-        <form>
-          <div class="DP">
-            <h2><img src="/TCC-E-book/imagens/menu.png" alt="">Escolha e Forma De Pagamento</h2> <hr>
-            <p>Já Possui Cadastro? <a href="">Identifique-se</a></p> 
-            
-            <hr>
-
+          <div>
             <label for="">Nome:</label>
-            <input type="text"> 
+            <input type="text">
+          </div>
 
+          <div>
             <label for="">E-Mail:</label>
             <input type="text"> 
-
-            <hr>
-
-            <label for="">Senha:</label>
-            <input type="text"> 
-
-            <label for="">Confirmar Senha:</label>
-            <input type="text"> 
-
-            <hr>
-
-            <label for="">CPF:</label>
-            <input type="text"> 
-
-            <label for="">R.G.:</label>
-            <input type="text"> 
-
           </div>
+
+          <hr>
+
+          <div>
+            <label for="">Senha:</label>
+            <input type="password">
+          </div>
+
+          <div>
+            <label for="">Confirmar Senha:</label>
+            <input type="password">
+          </div>
+
+          <hr>
+
+          <div>
+            <label for="">CPF:</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="">R.G.:</label>
+            <input type="text">
+          </div>
+        </form>
+
+        <form class="middle">
+          <h2><img src="/TCC-E-book/icons/local de envio.svg" alt="">Local De Envio</h2>
+
+          <div>
+            <label for="">CEP:</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="">Ponto De Referência:</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="">Nº Da Casa:</label>
+            <input type="text">
+          </div> 
+        </form>
+
+        <form class="end">
+          <h2><img src="/TCC-E-book/icons/pagamento.svg" alt="">Escolha e Forma De Pagamento</h2> <hr> 
+          
+          <div>
+            <label for="">Nº Do Cartão:</label>
+            <input type="number">
+          </div>
+
+          <div>
+            <label for="">Validade:</label>
+            <input type="date">
+          </div>
+
+          <div>
+            <label for="">Nome Do Titular:</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="">Código De Segurança:</label>
+            <input type="password">
+          </div>
+
+          <div>
+            <label for="">Parcelas:</label>
+            <input type="text">
+          </div>
+
+          <div><button>Finalizar Compra</button></div>
+
         </form>
     </section>
 
@@ -116,7 +130,7 @@
         <img src="/TCC-E-book/imagens/MP.png" alt="LINK PARA MERCADO PAGO">
         <p>
           Escolha como pagar Com o Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x no boleto com o Mercado 
-          Crédito. <a href="">Como pagar com Mercado Pago.</a>
+          Crédito. <a href="https://www.mercadopago.com.br/c/pagar-online-com-mercadopago" target="_blank"> Como pagar com Mercado Pago.</a>
         </p>
       </div>
 
@@ -126,7 +140,7 @@
         <img src="/TCC-E-book/imagens/protecao.png" alt="COMO IREMOS TE PROTEGER">
         <p>
         Segurança, do início ao fim. Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, 
-        porque você está sempre protegido. <a href="">Como te protegemos.</a>
+        porque você está sempre protegido. <a href="https://www.mercadolivre.com.br/seguranca " target="_blank"> Como te protegemos.</a>
         </p>
       </div>
     </footer>
