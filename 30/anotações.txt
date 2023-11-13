@@ -29,3 +29,15 @@ Rafael Faltou;
 Guilherme e Marcos
 
 Tela de loguin.
+
+10/11/2023 
+
+Guilherme:
+Finalização html e css da página de login.
+Finalizando a página de tela de login.
+
+Marcos:
+Faltou
+
+Rafael:
+Faltou
