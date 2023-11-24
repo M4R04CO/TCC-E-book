@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+/* GERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    cursor:default;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    height:5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5B202C;
+}
+
+.menu{
+    gap: 3rem;
+    width: 26em;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+.barra-pesquisa{
+    display: inline;
+    margin: 3rem;
+    
+}
+
+.logo{
+    transform: scale(1.2);
+}
+
+.flex{
+    display: flex;
+}
+
+header input[type="search"] {
+    min-width: 35em;
+    padding: 0.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-right:none ;
+    border-radius: 20px 0px 0px 20px;
+}
+
+header input::selection[type="search"] {
+    border:none;
+}
+
+header form button{
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-left:none ;
+    border-radius: 0px 20px 20px 0px;
+}
+
+header form button img{
+    cursor:pointer;
+}
+
+.action{
+    width: 24vw;
+    justify-content: space-evenly;
+}
+
+.action img{
+    width: 2em;
+}
+
+.action a{
+    background-color: aliceblue;
+    padding: 0.7rem;
+    border: 2px solid rgb(62, 62, 62);
+    border-radius: 20px;
+}
+
+.action a img{
+    cursor:pointer;
+}
+
+.menu img{
+    cursor:pointer;
+}
+
+section h1{
+    padding: 35px;
+    margin: 35px;
+    font-size: 30px;
+}
+
+section p{
+    padding: 0 35px;
+    font-size: 25px;
+    margin: 35px;
+}
+
+section img{
+    box-shadow: 55px -45px 3px #542631;
+    padding-left: 35px;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+main{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+main img{
+    width: 10%;    
+}
+
+footer{
+    display: flex;
+    background-color: #542631;
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{ 
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+footer hr{
+    rotate: 180deg;
+    height: 200px;
+    margin: 100px;
+   margin-left: 200px;
+}
+
+footer h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    margin-left: 15px;
+    font-size: 30px;
+    color: #ffff;
+    font-family: sans-serif;
+}
+
+.peq{
+    display: flex;
+   text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    gap: 10px;
+    color: #ffff;
+    font-family: sans-serif;
+}

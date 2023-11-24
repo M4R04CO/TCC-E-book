@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@1,8..60,600&display=swap');
+
+/* GERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    cursor:default;
+    outline:none;
+    border:none;
+    box-sizing:content-box;
+}
+
+/* HEADER */
+
+header{
+    height:5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5B202C;
+}
+
+.menu{
+    gap: 3rem;
+    width: 26em;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+.barra-pesquisa{
+    display: inline;
+    margin: 3rem;
+    
+}
+
+.logo{
+    transform: scale(1.2);
+}
+
+.flex{
+    display: flex;
+}
+
+header input[type="search"] {
+    min-width: 35em;
+    padding: 0.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-right:none ;
+    border-radius: 20px 0px 0px 20px;
+    cursor:text;
+}
+
+header input::selection[type="search"] {
+    border:none;
+}
+
+header form button{
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-left:none ;
+    border-radius: 0px 20px 20px 0px;
+}
+
+header form button img{
+    cursor:pointer;
+}
+
+.action{
+    width: 24vw;
+    justify-content: space-evenly;
+}
+
+.action img{
+    width: 2em;
+}
+
+.action a{
+    background-color: aliceblue;
+    padding: 0.7rem;
+    border: 2px solid rgb(62, 62, 62);
+    border-radius: 20px;
+}
+
+.action a img{
+    cursor:pointer;
+}
+
+.menu img{
+    cursor:pointer;
+}
+
+/* BODY */
+
+section{
+    margin:0 5% 5% 5%;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Adjust the gap between cards */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+main{
+    display:flex;
+    align-items:center;
+    width:100%;
+    gap:50px;
+    overflow:hidden;
+}
+
+.banner img{
+    width:100%;
+}
+
+section h1{
+    padding:2.5% 5% 2.5% 9%;
+    color:#542631;
+    text-decoration: underline;
+}
+
+.card{
+    padding:1.5% 1.5%;
+    width:100%;
+    border-radius:15px;
+    border:solid 1px;
+    gap:10px;
+    display:flex;
+    flex-direction:column;
+    background:linear-gradient(to bottom, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD ,transparent 50%,#FFFFFF);
+}
+
+.card .titulo-autor p{
+    color:#757575;
+    opacity: 0.9;
+}
+
+.card .imagem-do-livro{
+    width:80%;
+    padding:0 7% 0 7%;
+}
+
+.card .mais-detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .compra-favorito{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+}
+
+.compra-favorito img{
+    width: 40%;
+    cursor:pointer;
+}
+
+.card .mais-detalhes a{
+    background-color:#C9415D;
+    color:#FFFFFF;
+    border:solid 1px;
+    border-radius:15px;
+    padding:4% 4% 4% 7%;
+    text-decoration:none;
+    width:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    padding:5%;
+    background-color:#542631;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Inter', sans-serif;
+}
+
+footer hr{
+    width:50%;    
+    rotate:90deg;
+    border:solid 1px rgba(255, 255, 255, 0.323);
+}
+
+footer .foot{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#FFFFFF;
+}

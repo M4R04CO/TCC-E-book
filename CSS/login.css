@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@1,8..60,600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+    cursor:default;
+}
+
+section{
+    height:100vh;
+    background-color:#542631;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+section form{
+    background-color:#ffffff;
+    padding:2.5% 2.5% 2.5% 2.5%;
+    border-radius:15px;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:55px;
+}
+
+form h1{
+    font-family: 'Source Serif 4', serif;
+}
+
+form input{
+    padding:5%;
+    width:250%;
+    border:solid 1px;
+    border-radius:5px;
+    cursor:text;
+}
+
+form div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Inter', sans-serif;
+}
+
+label{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+label img{
+    width:50%;
+}
+
+button{
+    background-color:#C9415D;
+    padding:25% 75% 25% 75%;
+    width:100%;
+    border:none;
+    border-radius:5px;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:20px;   
+    font-family: 'Source Serif 4', serif;
+    cursor:pointer;
+}
