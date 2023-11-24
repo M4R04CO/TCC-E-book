@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatar RG Dinamicamente</title>
+  <style>
+    /* Estilizando o input para melhor visualização */
+    input {
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Input para RG -->
+  <label for="rgInput">RG:</label>
+  <input type="text" id="rgInput" maxlength="12" oninput="formatarRG(this)" />
+
+  <script>
+    // Função para formatar RG dinamicamente
+    function formatarRG(input) {
+      // Obtém o valor atual do input
+      let valor = input.value;
+
+      // Remove caracteres não numéricos
+      valor = valor.replace(/\D/g, '');
+
+      // Adiciona os sinais de RG dinamicamente
+      if (valor.length > 1 && valor.length <= 4) {
+        valor = valor.replace(/(\d{1,2})(\d{1,3})/, '$1.$2');
+      } else if (valor.length > 4 && valor.length <= 7) {
+        valor = valor.replace(/(\d{2})(\d{3})(\d{1,2})/, '$1.$2-$3');
+      } else if (valor.length > 7) {
+        valor = valor.replace(/(\d{2})(\d{3})(\d{3})(\d{1,1})/, '$1.$2.$3-$4');
+      }
+
+      // Atualiza o valor do input
+      input.value = valor;
+    }
+  </script>
+
+</body>
+</html>

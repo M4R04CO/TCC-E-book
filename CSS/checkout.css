@@ -94,13 +94,15 @@ header form button img{
 /* BODY */
 
 section{
+
     padding:5%;
     display:flex;
+    justify-content:center;
     align-items:center;
     gap:50px;
 }
 
-section .initial hr{
+section hr{
     border:solid 1px;
 }
 

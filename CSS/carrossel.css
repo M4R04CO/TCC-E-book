@@ -1,0 +1,216 @@
+.content { float:left; width:100%; margin:0 4%; padding: 20px 0; }
+
+
+/*HEADER*/
+.main_header          { background:#ffffff; border-bottom:1px #f4f4f4 solid; z-index:1; padding: 0.5em 0em; }
+.main_header .content { float:left; padding:0px 0; }
+
+.fixed            { display:block; position:fixed; z-index:9;  }
+.main_header_logo { text-align:center; margin:auto; float:none; width:138px; }
+.main_header_logo img { height:69px; }
+
+
+/*Seu Código*/
+.section-seu-codigo          { padding:0px;  }
+.section-seu-codigo .content { float:left; padding:1em 0; }
+.section_title               { width: 100%; float:left; margin-bottom:1em; font-size:1.3em; font-weight: 300; text-align: center; border-bottom: 1px #eceaea solid; padding-bottom: 1em; }
+
+.box-artigo   { width:100%; float:left; background:#fff; box-shadow: 1px 0px 1.2px 0px #e3e3e3; border-radius:3px; padding:1em; }
+
+/*Slide*/
+
+.slideshow-container {
+    
+    width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+.slideshow {
+    display: none;
+}
+
+
+.slideshow img { width:100%; }
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.legenda {
+
+    width: auto;
+    color: #fdfdfd;
+    font-size: 0.9em;
+    padding:5px;
+    position: absolute;
+    bottom: 18%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 10%;
+
+}
+
+.numeracao {
+
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.paginacao { 
+  
+    width:100%; 
+    float:left;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.dot {
+
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    border-radius: 50px;
+    background-color: #a9a9a9;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.ativo,
+.dot:hover {
+    background-color: #242424;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em){
+
+
+    .legenda   { font-size:2em; padding:8px; }
+    .paginacao { margin:20px 0; }
+    .dot       { width:18px; height:18px; }
+}
+
+/*Slide*/
+
+
+/*FOOTER*/
+.main_footer          { background-color:#007cff; color:#fff; font-size:0.875em; }
+.main_footer .content { padding:3em 0em; }
+
+.main_footer_copy       { background-color:transparent; width:100%; float:left; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p     { font-family:'open_sanslight'; font-size:1em; color:#ffffff; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+.main_footer_copy .by a { text-decoration:underline; color:#ffffff; }
+.main_footer_copy .by a:hover { color:#000000;}
+
+
+/*Começa o Responsivo*/
+
+/*480PX BREAKPOINT*/
+/*480 dividido por 16 = 30em*/
+@media (min-width:30em){
+
+.boxBannerTopo { padding:1em 0; }
+
+}
+
+/*600PX BREAKPOINT*/
+/*600 dividido por 16 = 37,5em*/
+@media (min-width:37em){
+
+
+} 
+
+/*768PX BREAKPOINT*/
+/*768 dividido por 16 = 48em*/
+@media (min-width:48em){
+
+
+} 
+
+/*960PX BREAKPOINT*/
+/*960 dividido por 16 = 60em*/
+@media (min-width:60em){
+
+
+}
+
+/*1280PX BREAKPOINT*/
+/*1280 dividido por 16 = 80em*/
+@media (min-width:80em){
+
+ 
+}
+
+/*1366PX BREAKPOINT*/
+/*1366 dividido por 16 = 85,375em*/
+@media (min-width:85em){
+
+ .content  { width:80%; margin:0 10%; }
+
+}
+
+/*1600PX BREAKPOINT*/
+/*1600 dividido por 16 = 100em*/
+@media (min-width:100em){
+
+
+}
+/*Fecha o Responsivo*/
