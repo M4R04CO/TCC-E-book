@@ -4,22 +4,27 @@
         $user = "root";
         $password = "";
 
-        $cpf = $_POST['cpf'];
-        $rg = $_POST['rg'];
+        $cpf = $_GET['cpf'];
+        $rg = $_GET['rg'];
 
-        $cartao = $_POST['cartao'];
-        $validade = $_POST['validade'];
-        $titular = $_POST['titular'];
-        $codSeguranca = $_POST['codSeguranca'];
-        $formPagamento = $_POST['formPagamento'];
+        $numCartao = $_GET['numCartao'];
+        $validade = $_GET['validade'];
+        $titular = $_GET['titular'];
+        $codSeguranca = $_GET['codSeguranca'];
+        $formPagamento = $_GET['formPagamento'];
 
         $pdo = new PDO($dsn, $user, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            if(isset($cpf) && isset($rg) && isset($cartao) && isset($validade) && isset($titular) && isset($codSeguranca) && isset($formPagamento)){
-                if($cpf != "" && $rg != "" && $cartao != "" && $validade != "" && $titular != "" && $codSeguranca != "" && $formPagamento != ""){
-                    $insertUserQuery = "INSERT INTO compra (cpf,rg,cartao,validade,titular,codSeguranca,formPagamento) VALUES ('$cpf','$rg','$cartao','$validade','$titular','$codSeguranca','$formSeguranca')";
+            if(isset($cpf) && isset($rg) && isset($numCartao) && isset($validade) && isset($titular) && isset($codSeguranca) && isset($formPagamento)){
+                if($cpf != "" && $rg != "" && $numCartao != "" && $validade != "" && $titular != "" && $codSeguranca != "" && $formPagamento != ""){
+                    $insertUserQuery = "UPDATE usuario set cpf='$cpf' rg='$rg' WHERE email = '$email'";
+                    $insertCompQuery = "INSERT INTO compra (numCartao,validade,titular,codSeguranca,formPagamento) VALUES ('$numCartao','$validade','$titular','$codSeguranca','$formPagamento')";
                     $stmt = $pdo->exec($insertUserQuery);
+                    $tsmt = $pdo->exec($insertCompQuery);
+
+                    header('Location: ../HTML/homepage.html');
+                    exit;
                 }
             }
         }catch(PDOException $e){
