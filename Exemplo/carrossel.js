@@ -1,14 +1,14 @@
 // VARIÁVEIS //
 
 const controls = document.querySelectorAll(".control"); 
-const items = document.querySelectorAll(".item");
+const items = document.querySelectorAll(".card");
 const maxItems = items.length;
 let currentItem = 0;
 
 controls.forEach(control => {
     control.addEventListener("click", () => {
 
-        const isLeft = control.classList.contains("arrow-left");
+        const isLeft = control.classList.contains("arrow-lef");
 
         if(isLeft){
             currentItem -= 1;

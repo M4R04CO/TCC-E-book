@@ -115,37 +115,78 @@ main{
     width:100%;
 }
 
-section h1{
-    padding:2.5% 5% 2.5% 9%;
-    color:#542631;
-    text-decoration: underline;
+.container-cards{
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
+.container-cards button{
+    position: relative;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    background-color: aqua;
+    top: 300px;
+}
+
+.container-cards .arrow-lef{
+    left: 0;
+
+
+}
+.container-cards .arrow-righ{
+    float: right;
+    
+}
+
+.esconder-cards{
+	overflow-x: auto;
+}
+
+.esconder-cards::-webkit-scrollbar{
+	display:none;
+}
+
+.cards-galeria{
+	width: max-content;
+	height: auto;
+	display: flex;
+}
 .card{
-    padding:1.5% 1.5%;
-    width:100%;
+	padding: 1rem;
+	margin: 1rem;
     border-radius:15px;
     border:solid 1px;
     gap:10px;
     display:flex;
     flex-direction:column;
-    background:linear-gradient(to bottom, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD, #B6AEAD ,transparent 50%,#FFFFFF);
+	align-items: center;
+    background:linear-gradient(to bottom, #B6AEAD 50%,#FFFFFF 52%);
+    opacity: 0.7;
+    transition:all 1s ease-in-out;
+}
+.card .titulo-autor h3{
+	font-size: 1.4rem;
 }
 
 .card .titulo-autor p{
     color:#757575;
     opacity: 0.9;
+	margin: 0;
 }
 
 .card .imagem-do-livro{
-    width:80%;
+    width:300px;
+	display: block;
     padding:0 7% 0 7%;
 }
 
 .card .mais-detalhes{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+	width: 100% ;
+
 }
 
 .card .compra-favorito{
@@ -156,21 +197,30 @@ section h1{
 }
 
 .compra-favorito img{
-    width: 40%;
+    width: 2rem;
     cursor:pointer;
 }
 
 .card .mais-detalhes a{
+	position: relative;
     background-color:#C9415D;
     color:#FFFFFF;
     border:solid 1px;
     border-radius:15px;
-    padding:4% 4% 4% 7%;
+    padding:4%;
     text-decoration:none;
-    width:50%;
     cursor:pointer;
-    font-size:18px;
+    font-size:1rem;
+	text-align: center;
+	right: 1rem;
 }
+
+.current-item{
+	opacity:1;
+	box-shadow:0 0 10px 1px;
+	border:5px solid rgb(185, 255, 248);
+}
+
 
 /* FOOTER */
 
