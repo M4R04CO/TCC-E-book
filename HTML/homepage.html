@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Books Alfas</title>
+    <title>E-BOOKS ALFA</title>
     <link rel="stylesheet" href="../CSS/homepage.css">
     <link rel="shortcut icon" href="../imagens/iconL.png" type="image/x-icon">
     <script src="../JS/banner.js" defer></script>
-    <script src="../Exemplo/carrossel.js" defer></script>
+    <script src="../JS/rolagem-1.js" defer></script>
+
+
+   
+
 </head>
 <body>
-    <header>
-        <div class="menu flex">
-            <a href="#"><img style="width: 3,5em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
-            <img style="width: 14em;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo do Alfa E-Books">
-        </div>
-        <div class="barra-pesquisa flex">
-            <form class="pesquisar flex" action="" method="get">
-                <input type="search">
-                <button type="submit"><img src="../icons/lupa.svg" alt="pesquisar"></button>
-            </form>
-        </div>
-        <div class="action flex">
-            <a href="#"><img src="../icons/user.svg" alt="Usuário"></a>
-            <a href="#"><img src="../icons/cart.svg" alt="Carrinho"></a>
-            <a href="#"><img src="../icons/salvo.svg" alt="Salvos"></a>
-        </div>
-    </header>
+  <header>
+    <div class="menu flex">
+      <a href="#" onclick="toggleMenu()"><img class="toggleMenu" style="width: 3em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
+      <img style="width: 11em;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo">
+    </div>
+
+    <div class="menu-lateral" id="menuLateral">
+      <a href="javascript:void(0)" class="fechar-btn" onclick="toggleMenu()"><iconify-icon icon="ph:x-bold" width="44"></iconify-icon></a>
+      <a class="link-M" href="../HTML/homepage.html">PÁGINA INICIAL</a>
+      <a class="link-M" href="../HTML/sobreNos.html">SOBRE NÓS</a>
+      <!-- Adicione mais itens conforme necessário -->
+    </div>
+
+      <div class="barra-pesquisa flex">
+          <form class="pesquisar flex" action="" method="get">
+              <input type="search">
+              <button type="submit"><img src="../icons/lupa.svg" alt="pesquisar"></button>
+          </form>
+      </div>
+      <div class="action flex">
+          <a href="../HTML/perfil.html"><img src="../icons/user.svg" alt="Usuário"></a>
+          <a href="#"><img src="../icons/cart.svg" alt="Carrinho"></a>
+          <a href="../HTML/favorito.html"><img src="../icons/salvo.svg" alt="Salvos"></a>
+      </div>
+  </header>
     <div class="textAtencion">
         <span></span>
     </div>
@@ -36,15 +48,15 @@
             <div class="slideshow-container">
     
                 <div class="slideshow fade">
-                    <img src="../imagens/Banner - Promoção.jpg" alt="slide">
+                    <img style="width: 100vw;" src="../imagens/Banner - Promoção.jpg" alt="slide">
                 </div>
     
                 <div class="slideshow fade">
-                    <img src="../imagens/Banner - Promoção.jpg" alt="Slide">
+                    <img style="width: 100vw;" src="../imagens/Banner - Promoção.jpg" alt="Slide">
                 </div>
     
                 <div class="slideshow fade">
-                    <img src="../imagens/Banner - Promoção.jpg" alt="Slide">
+                    <img style="width: 100vw;" src="../imagens/Banner - Promoção.jpg" alt="Slide">
                 </div>
             </div>
     
@@ -58,169 +70,337 @@
     </main>
     
     <nav class="container-cards">
-        <h3>Mais vendidos</h3>
-        <button class="arrow-lef control"></button>
-        <button class="arrow-righ control"></button>
+      <h1>RECOMENDADOS</h1>
+      <button class="arrow-left2 control-l1 botao"><iconify-icon icon="fluent:arrow-up-12-filled" style="color: white;" width="22" height="22" rotate="270deg"></iconify-icon></button>
+      <button class="arrow-righ control-l1 botao"><iconify-icon icon="fluent:arrow-up-12-filled" style="color: white;" width="22" height="22" rotate="90deg"></iconify-icon></button>
     <section class="esconder-cards">
-        <section class="cards-galeria">
-          <div class="card current-item">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+      <section class="cards-galeria">
+        <div class="card-l1 current-item card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card ">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
+        <div class="card-l1 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
             </div>
           </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
     
-          <div class="card">
-            <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
-            <div class="titulo-autor">
-              <h3>Mais Esperto Que O Diabo</h3>
-              <p>Por Napoleon Hill</p>
-              <div class="estrelas">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-                <img src="../imagens/estrela.jpg" alt="">
-              </div>
-            </div>
-            <div class="mais-detalhes">
-              <a href="">Mais Detalhes</a>
-              <div class="compra-favorito">
-                  <img src="../icons/salvo.svg" alt="">
-                  <img src="../icons/cart.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </section>
+       
+      </section>
     </section>
     </nav>
-     
 
+
+    <nav class="container-cards">
+      <h1>RECOMENDADOS</h1>
+      <button class="arrow-left2 control-l2 botao"><iconify-icon icon="fluent:arrow-up-12-filled" style="color: white;" width="22" height="22" rotate="270deg"></iconify-icon></button>
+      <button class="arrow-righ control-l2 botao"><iconify-icon icon="fluent:arrow-up-12-filled" style="color: white;" width="22" height="22" rotate="90deg"></iconify-icon></button>
+    <section class="esconder-cards">
+      <section class="cards-galeria">
+        <div class="card-l1 current-item card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+        <div class="card-l2 card">
+          <img src="../imagens/mais-esperto-que-o-diabo.png" alt="" class="imagem-do-livro">
+          <div class="titulo-autor">
+            <h3>Mais Esperto Que O Diabo</h3>
+            <p>Por Napoleon Hill</p>
+            <div class="estrelas">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+              <img src="../imagens/estrela.jpg" alt="">
+            </div>
+          </div>
+          <div class="mais-detalhes">
+            <a href="">Mais Detalhes</a>
+            <div class="compra-favorito">
+                <img src="../icons/salvo.svg" alt="">
+                <img src="../icons/cart.svg" alt="">
+            </div>
+          </div>
+        </div>
+    
+       
+      </section>
+    </section>
+    </nav>
+
+   
     <footer>
         <div class="foot">
           <img src="../imagens/MP.png" alt="LINK PARA MERCADO PAGO">
@@ -240,26 +420,32 @@
           </p>
         </div>
       </footer>
-      <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+      
+      <section class="copy">
+        <div class="direitos">
+          <span class="branco">Todos os direitos reservado a Alpha Books ©</span>
+          <span class="branco">since 2023</span>
+        </div>
+        <div class="redes">
+          <div>
+            <span class="branco">Nossas redes sociais!</span>
+          </div>
+          <div class="tamanho">
+            <iconify-icon class="icones face" icon="ant-design:facebook-outlined" width="56" height="56"></iconify-icon>
+            <iconify-icon class="icones insta" icon="mdi:instagram" width="54" height="54"></iconify-icon>
+            <iconify-icon class="icones git" icon="jam:github" width="54" height="54"></iconify-icon>
+            <iconify-icon class="icones zap" icon="akar-icons:whatsapp-fill" width="50" height="50"></iconify-icon>
+          </div>
+          </div>
+      </section>
 
       <script>
-        // // Função para ajustar a largura do contêiner de cards
-        // function ajustarLarguraContainer() {
-        //   const cardsContainer = document.getElementById('cardsContainer');
-        //   const numCards = cardsContainer.children.length;
-        //   const cardWidth = 200; // Largura de cada card
-        //   const marginRight = 10; // Espaçamento entre os cards
-  
-        //   // Calcula a largura total necessária para exibir todos os cards
-        //   const larguraTotal = numCards * (cardWidth + marginRight) - marginRight;
-  
-        //   // Define a largura do contêiner
-        //   cardsContainer.style.width = `${larguraTotal}px`;
-        // }
-  
-        // // Chama a função quando a página é carregada e redimensionada
-        // window.addEventListener('load', ajustarLarguraContainer);
-        // window.addEventListener('resize', ajustarLarguraContainer);
+        function toggleMenu() {
+            var menuLateral = document.getElementById("menuLateral");
+            menuLateral.style.display = (menuLateral.style.display === "flex") ? "none" : "flex";
+        }
       </script>
+
+      <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </body>
 </html>

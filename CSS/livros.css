@@ -18,7 +18,7 @@ header{
     height:5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #5B202C;
 }
 
@@ -27,7 +27,12 @@ header{
     width: 26em;
     justify-content: space-evenly;
     align-items: center;
-  
+}
+
+.toggleMenu:active{
+    width:2%;
+    opacity:.5;
+    transition:200ms;
 }
 
 .barra-pesquisa{
@@ -91,6 +96,42 @@ header form button img{
 
 .menu img{
     cursor:pointer;
+}
+
+/* Estilos do menu lateral */
+.menu-lateral {
+    display:none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #6E2738;
+    padding-top: 60px;
+    color: white;
+    z-index:2;
+}
+
+.menu-lateral a {
+    padding: 15px;
+    
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: #f1f1f1;
+}
+
+.fechar-btn {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* BODY */

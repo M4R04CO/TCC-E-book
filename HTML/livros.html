@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>PÁGINAS DE LIVRO</title>
+    <title>E-BOOKS ALFA</title>
 
-    <link rel="stylesheet" href="/TCC-E-book/CSS/livros.css">
+    <link rel="stylesheet" href="../CSS/livros.css">
+    <link rel="shortcut icon" href="../imagens/iconL.png" type="image/x-icon">
 
 </head>
 <body>
     <header>
         <div class="menu flex">
-            <a href="#"><img style="width: 3,5em;" src="/TCC-E-book/icons/menu-aberto 1 (1).svg" alt=""></a>
-            <img style="width: 14em;" class="logo" src="/TCC-E-book/imagens/LogoHD-removebg-preview.png" alt="logo do Alfa E-Books">
-        </div>
-        <div class="barra-pesquisa flex">
-            <form class="pesquisar flex" action="" method="get">
-                <input type="search">
-                <button type="submit"><img src="/TCC-E-book/icons/lupa.svg" alt="pesquisar"></button>
-            </form>
-        </div>
+            <a href="#" onclick="toggleMenu()"><img class="toggleMenu" style="width: 3.5em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
+          </div>
+  
+          <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" class="fechar-btn" onclick="toggleMenu()">&times;</a>
+            <a href="../HTML/homepage.html">PÁGINA INICIAL</a>
+            <a href="../HTML/sobreNos.html">SOBRE NÓS</a>
+            <a href="#">Item 3</a>
+            <!-- Adicione mais itens conforme necessário -->
+          </div>
+        <img style="width: 14em;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo do Alfa E-Books">
         <div class="action flex">
-            <a href="#"><img src="/TCC-E-book/icons/user.svg" alt="Usuário"></a>
-            <a href="#"><img src="/TCC-E-book/icons/cart.svg" alt="Carrinho"></a>
-            <a href="#"><img src="/TCC-E-book/icons/salvo.svg" alt="Salvos"></a>
+            <a href="../HTML/perfil.html"><img src="../icons/user.svg" alt="Usuário"></a>
+            <a href="#"><img src="../icons/cart.svg" alt="Carrinho"></a>
+            <a href="../HTML/favorito.html"><img src="../icons/salvo.svg" alt="Salvos"></a>
         </div>
     </header>
 
     <section>
-        <img src="/TCC-E-book/imagens/mais-esperto-que-o-diabo.png" class="livro" alt="livro mais esperto que o diabo">
+        <img src="../imagens/mais-esperto-que-o-diabo.png" class="livro" alt="livro mais esperto que o diabo">
 
         <main>
             <div class="titulo-autor-estrela">
@@ -38,11 +41,11 @@
             </div>
 
             <div class="estrelas">
-                <img src="/TCC-E-book/imagens/estrela_amarela.jpg" class="star" alt="estrela">
-                <img src="/TCC-E-book/imagens/estrela_amarela.jpg" class="star" alt="estrela">
-                <img src="/TCC-E-book/imagens/estrela_amarela.jpg" class="star" alt="estrela">
-                <img src="/TCC-E-book/imagens/estrela_amarela.jpg" class="star" alt="estrela">
-                <img src="/TCC-E-book/imagens/estrela_amarela.jpg" class="star" alt="estrela">
+                <img src="../imagens/estrela_amarela.jpg" class="star" alt="estrela">
+                <img src="../imagens/estrela_amarela.jpg" class="star" alt="estrela">
+                <img src="../imagens/estrela_amarela.jpg" class="star" alt="estrela">
+                <img src="../imagens/estrela_amarela.jpg" class="star" alt="estrela">
+                <img src="../imagens/estrela_amarela.jpg" class="star" alt="estrela">
                </div>
     
             <div class="ler-comprar">
@@ -68,7 +71,7 @@
 
         <div class="info">
             <p>N° de Páginas</p>
-            <img src="/TCC-E-book/icons/pagina.svg" alt="">
+            <img src="../icons/pagina.svg" alt="">
             <h3>208 Páginas</h3>
         </div>
 
@@ -76,7 +79,7 @@
 
         <div class="info">
             <p>Idioma</p>
-            <img src="/TCC-E-book/icons/idoma.svg" alt="">
+            <img src="../icons/idoma.svg" alt="">
             <h3>Português</h3>
         </div>
 
@@ -84,7 +87,7 @@
 
         <div class="info">
             <p>Idade de leitura</p>
-            <img src="/TCC-E-book/icons/idade.svg" alt="">
+            <img src="../icons/idade.svg" alt="">
             <h3>Idade Acima de 12 Anos</h3>
         </div>
 
@@ -92,7 +95,7 @@
 
         <div class="info">
             <p>Tamanho</p>
-            <img src="/TCC-E-book/icons/tamanho.svg" alt="">
+            <img src="../icons/tamanho.svg" alt="">
             <h3>4705 KB</h3>
         </div>
 
@@ -106,7 +109,7 @@
             <h3>COMENTÁRIOS</h3>
         
         
-            <img src="/TCC-E-book/icons/comentarista.svg" alt="">
+            <img src="../icons/comentarista.svg" alt="">
             <div class="comentario">
                 <h4>kakashi Hatake</h4>
                 <p>4.6</p>
@@ -119,7 +122,7 @@
                     industry. Lorem Ipsum has been the 
                 </p>
             </div>
-            <img src="/TCC-E-book/icons/comentarista.svg" alt="">
+            <img src="../icons/comentarista.svg" alt="">
             <div class="comentario">
                 <h4>kakashi Hatake</h4>
                 <p>4.6</p>
@@ -138,7 +141,7 @@
 
     <footer>
         <div class="foot">
-          <img src="/TCC-E-book/imagens/MP.png" alt="LINK PARA MERCADO PAGO">
+          <img src="../imagens/MP.png" alt="LINK PARA MERCADO PAGO">
           <p>
             Escolha como pagar. Ganhe descontos ao pagar no Crédito e no pix. Cadastre suas formas de pagamentos para que possa Utilizar 
             nas Proximas Compras.
@@ -148,12 +151,19 @@
         <hr>
   
         <div class="foot">
-          <img src="/TCC-E-book/imagens/protecao.png" alt="COMO IREMOS TE PROTEGER">
+          <img src="../imagens/protecao.png" alt="COMO IREMOS TE PROTEGER">
             <p>
                 Segurança, do início ao fim. Você não gostou do que comprou? Te Reembolsamos! No Ebooks-Alfa não há nada que você não possa fazer, 
                 porque você está sempre protegido.
             </p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuLateral = document.getElementById("menuLateral");
+            menuLateral.style.display = (menuLateral.style.display === "flex") ? "none" : "flex";
+        }
+      </script>
 </body>
 </html>

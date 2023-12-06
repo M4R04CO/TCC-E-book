@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-BOOKS ALFA</title>
+    <link rel="stylesheet" href="../CSS/homepage.css">
+    <link rel="shortcut icon" href="../imagens/iconL.png" type="image/x-icon">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../JS/banner.js" defer></script>
+    <script src="../JS/rolagem-1.js" defer></script>
+    <script src="../JS/rolagem-2.js" defer></script>
+
+   
+
+</head>
+<body>
+    <header>
+        <div class="menu flex">
+          <a href="#" onclick="toggleMenu()"><img class="toggleMenu" style="width: 3em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
+          <img style="width: 11em;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo">
+        </div>
+  
+        <div class="menu-lateral" id="menuLateral">
+          <a href="javascript:void(0)" class="fechar-btn" onclick="toggleMenu()"><iconify-icon icon="ph:x-bold" width="44"></iconify-icon></a>
+          <a href="../HTML/homepage.html">PÁGINA INICIAL</a>
+          <a href="../HTML/sobreNos.html">SOBRE NÓS</a>
+          <a href="#">Item 3</a>
+          <!-- Adicione mais itens conforme necessário -->
+        </div>
+  
+          <div class="barra-pesquisa flex">
+              <form class="pesquisar flex" action="" method="get">
+                  <input type="search">
+                  <button type="submit"><img src="../icons/lupa.svg" alt="pesquisar"></button>
+              </form>
+          </div>
+          <div class="action flex">
+              <a href="../HTML/perfil.html"><img src="../icons/user.svg" alt="Usuário"></a>
+              <a href="#"><img src="../icons/cart.svg" alt="Carrinho"></a>
+              <a href="../HTML/favorito.html"><img src="../icons/salvo.svg" alt="Salvos"></a>
+          </div>
+      </header>
+      <script>
+        function toggleMenu() {
+            var menuLateral = document.getElementById("menuLateral");
+            menuLateral.style.display = (menuLateral.style.display === "flex") ? "none" : "flex";
+        }
+      </script>
+</body>

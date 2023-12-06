@@ -10,12 +10,13 @@
     outline:none;
     border:none;
     box-sizing:content-box;
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
 
 header{
-    height:5%;
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,17 +28,35 @@ header{
     width: 26em;
     justify-content: space-evenly;
     align-items: center;
-  
+}
+
+.toggleMenu:active{
+    width:2%;
+    opacity:.5;
+    transition:200ms;
+}
+.link-M{
+    text-decoration: none;
+    margin: 10px;
+    transition: 300ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link-M:hover{
+    transform: translate(1.2);
+    background-color:#531723 ;
+
 }
 
 .barra-pesquisa{
     display: inline;
-    margin: 3rem;
     
 }
 
 .logo{
-    transform: scale(1.2);
+    transform: scale(1.3);
+    position: relative;
+    right: 35px;
 }
 
 .flex{
@@ -45,12 +64,13 @@ header{
 }
 
 header input[type="search"] {
-    min-width: 35em;
-    padding: 0.5rem;
+    /* min-width: 35em; */
+    padding:0px 0.5rem ;
     border: 2px solid rgb(0, 0, 0);
     border-right:none ;
     border-radius: 20px 0px 0px 20px;
     cursor:text;
+    font-size: 2rem;
 }
 
 header input::selection[type="search"] {
@@ -79,10 +99,13 @@ header form button img{
 }
 
 .action a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aliceblue;
-    padding: 0.7rem;
+    padding: 0.6em;
     border: 2px solid rgb(62, 62, 62);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .action a img{
@@ -91,6 +114,42 @@ header form button img{
 
 .menu img{
     cursor:pointer;
+}
+
+/* Estilos do menu lateral */
+.menu-lateral {
+    display:none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #6E2738;
+    padding-top: 60px;
+    color: white;
+    z-index:2;
+}
+
+.menu-lateral a {
+    padding: 15px;
+    
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+    color: #f1f1f1;
+}
+
+.fechar-btn {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* BODY */
@@ -104,8 +163,6 @@ header form button img{
 }
 
 main{
-    display:flex;
-    align-items:center;
     width:100%;
     gap:50px;
     overflow:hidden;
@@ -123,19 +180,28 @@ main{
 .container-cards button{
     position: relative;
     z-index: 1;
-    width: 2rem;
-    height: 2rem;
-    background-color: aqua;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 2rem;
+    background-color:#000000;
     top: 300px;
+    transition: all 0.4s ease;
+    border: 2px solid #757575;
+    border-radius: 50%;
+}
+
+.botao:hover{
+    transform: scale(1.3);
 }
 
 .container-cards .arrow-lef{
-    left: 0;
+    left: -3rem;
 
 
 }
 .container-cards .arrow-righ{
     float: right;
+  
     
 }
 
@@ -162,8 +228,8 @@ main{
     flex-direction:column;
 	align-items: center;
     background:linear-gradient(to bottom, #B6AEAD 50%,#FFFFFF 52%);
-    opacity: 0.7;
-    transition:all 1s ease-in-out;
+    opacity: 0.8;
+    transition: all 0.3s ease ;
 }
 .card .titulo-autor h3{
 	font-size: 1.4rem;
@@ -176,7 +242,7 @@ main{
 }
 
 .card .imagem-do-livro{
-    width:300px;
+    width:200px;
 	display: block;
     padding:0 7% 0 7%;
 }
@@ -218,16 +284,26 @@ main{
 .current-item{
 
 	opacity:1;
-	box-shadow:0 0 10px 1px;
-	border:5px solid rgb(185, 255, 248);
+	outline:3px solid #C9415D;
 }
 
+.current-item1{
+
+	opacity:1;
+	outline:3px solid #C9415D;
+}
+
+nav h1{
+    padding:5% 0 0 1%;
+    text-decoration: underline;
+    color:#542631;
+}
 
 /* FOOTER */
 
 footer{
-    padding:5%;
-    background-color:#542631;
+    padding:3em;
+    background-color:rgb(114, 46, 62);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -235,7 +311,7 @@ footer{
 }
 
 footer hr{
-    width:50%;    
+    width:25%;    
     rotate:90deg;
     border:solid 1px rgba(255, 255, 255, 0.323);
 }
@@ -247,4 +323,123 @@ footer .foot{
     align-items:center;
     text-align:center;
     color:#FFFFFF;
+}
+
+/* banner */
+
+.slideshow-container {
+    
+    width: 100%;
+
+}
+
+
+.paginacao { 
+  
+    width:100%; 
+    float:left;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.dot {
+
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    border-radius: 50px;
+    background-color: #a9a9a9;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.ativo,
+.dot:hover {
+    background-color: #242424;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+
+/* direitos */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.copy{
+    padding: 0.5rem 0;
+    background-color:rgb(86, 32, 45);
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.direitos{
+    display: flex;
+    flex-direction: column;
+  
+}
+.direitos span{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.redes{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes span{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.icones {
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s ease;
+
+}
+
+.tamanho{
+    display: flex;
+    width: 20vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icones:hover{
+    transform:scale(1.2) ;
+}
+
+.face:hover{
+    color: rgb(37, 37, 248);
+}
+.insta:hover{
+    color: rgb(208, 58, 221);
+}
+.git:hover{
+    color: rgb(59, 18, 207);
+}
+.zap:hover{
+    color: rgb(21, 238, 57);
+}
+
+.branco{
+    color: white;
 }

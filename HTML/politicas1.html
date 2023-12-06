@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politica De Acesso</title>
+    <title>E-BOOKS ALFA</title>
     
     <link rel="stylesheet" href="../CSS/politicas1.css">
+    <link rel="shortcut icon" href="../imagens/iconL.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="menu flex">
-            <a href="#"><img style="width: 3,5em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
-            <img style="width: 14em ;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo do Alfa E-Books">
-        </div>
-        <div class="barra-pesquisa flex">
-            <form class="pesquisar flex" action="" method="get">
-                <input type="search">
-                <button type="submit"><img src="../icons/lupa.svg" alt="pesquisar"></button>
-            </form>
-        </div>
+            <a href="#" onclick="toggleMenu()"><img class="toggleMenu" style="width: 3.5em;" src="../icons/menu-aberto 1 (1).svg" alt=""></a>
+          </div>
+  
+          <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" class="fechar-btn" onclick="toggleMenu()">&times;</a>
+            <a href="../HTML/homepage.html">PÁGINA INICIAL</a>
+            <a href="../HTML/sobreNos.html">SOBRE NÓS</a>
+            <a href="#">Item 3</a>
+            <!-- Adicione mais itens conforme necessário -->
+          </div>
+        <img style="width: 14em ;" class="logo" src="../imagens/LogoHD-removebg-preview.png" alt="logo do Alfa E-Books">
         <div class="action flex">
-            <a href="#"><img src="../icons/user.svg" alt="Usuário"></a>
+            <a href="../HTML/perfil.html"><img src="../icons/user.svg" alt="Usuário"></a>
             <a href="#"><img src="../icons/cart.svg" alt="Carrinho"></a>
-            <a href="#"><img src="../icons/salvo.svg" alt="Salvos"></a>
+            <a href="../HTML/favorito.html"><img src="../icons/salvo.svg" alt="Salvos"></a>
         </div>
      </header>
      <body>
@@ -73,5 +76,12 @@
      </div>
      </footer>
      </body>
+
+      <script>
+      function toggleMenu() {
+          var menuLateral = document.getElementById("menuLateral");
+          menuLateral.style.display = (menuLateral.style.display === "flex") ? "none" : "flex";
+      }
+    </script>
 </body>
 </html>
